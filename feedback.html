@@ -6,42 +6,75 @@
     <title>student portal</title>
 </head>
 <body>
+
+<header>
     <h1>Feedback</h1>
     <p>Your one-stop portal for academic information</p>
+
     <nav>
         <ul>
-        <li>
-            <a href="home.html">Home page</a><br>
-           <li> <a href="profile.html">Profile page</a><br></li>
-            <li><a href="course.html">Course page</a><br></li>
-            <li><a href="contact.html">contact page</a><br></li>
-            <li><a href="feedback.html">Feedback page</a><br></li>
+            <li><a href="index.html">Home page</a></li>
+            <li><a href="profile.html">Profile page</a></li>
+            <li><a href="course.html">Course page</a></li>
+            <li><a href="contact.html">contact page</a></li>
+            <li><a href="feedback.html">Feedback page</a></li>
             <li><a href="grade.html">Grades page</a></li>
-        </li>
         </ul>
-        <hr/>
     </nav>
-<form>
+</header>
 
-<label for="name">Name:</label><br>
-<input type="text"id="name"name="name"><br><br>
+<main>
 
-<label for="email">Email:</label><br>
-<input type="email"id="email"email="email"><br><br>
+    <form>
 
-<label for="phone"id="phone"phone="phone">Phone</label><br>
-<input type="tel"id="phone"name="phone"><br><br>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br><br>
 
-<label><strong>Gender</strong></label><br>
-<input type="radio" id="Male" name="gender" value="Male">
-<label for="male">Male</label>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
 
-<input type="radio" id="female" name="gender" value="female">
-<label for="female">Female</label>
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone"><br><br>
 
-<input type="radio" id="other" name="gender" value="other">
-<label for="other">Other</label>
-<br><br><button>submit</button>
-</form> 
+        <label><strong>Gender</strong></label><br>
+
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+
+        <input type="radio" id="other" name="gender" value="Other">
+        <label for="other">Other</label>
+
+        <br><br>
+
+        <label for="course">Select Course:</label><br>
+
+        <select id="course" name="course">
+            <option value="bcom">B.COM</option>
+            <option value="bba">BBA</option>
+            <option value="bca">BCA</option>
+            <option value="bed">B.ED</option>
+        </select>
+
+        <br><br>
+
+        <label for="feedback">Your Feedback:</label><br>
+
+        <textarea id="feedback" name="feedback" rows="5" cols="40"></textarea>
+
+        <br><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</main>
+
+<footer>
+    <p>2026 Student Portal. All rights reserved.</p>
+</footer>
+
 </body>
-</html
+</html>
